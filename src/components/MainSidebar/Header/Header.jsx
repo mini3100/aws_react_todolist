@@ -1,6 +1,6 @@
+import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React from 'react';
 import * as S from "./Style"
 import { HiMenu, HiSearch } from "react-icons/hi"
 import { useRecoilState } from "recoil";

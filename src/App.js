@@ -7,6 +7,7 @@ import * as S from './styles/common';
 import { Route, Routes } from 'react-router-dom';
 import Today from './pages/Today/Today';
 import { useState } from 'react';
+import Calendar from './pages/Calendar/Calendar';
 
 function App() {
   const [ isShow, setIsShow ] = useState(false);
@@ -25,7 +26,7 @@ function App() {
           {/* 경로엔 소문자만 쓸 수 있음 */}
           <Route path="/today" element={ <Today /> }/>
           <Route path="/upcoming" />
-          <Route path="/calendar" />
+          <Route path="/calendar" element={ <Calendar/> } />
           <Route path="/stickywall" />
         </Routes>
       </MainLayout>
