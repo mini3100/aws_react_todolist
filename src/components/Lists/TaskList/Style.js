@@ -20,6 +20,9 @@ export const SListBox = css`
 export const SListContent = css`
     display: flex;
     align-items: center;
+    & * {
+        color: #5B5B5C;
+    }
 `;
 
 export const SCheckBox = css`

@@ -21,11 +21,16 @@ function TaskList({ target, setTarget }) {
         }
     }
 
+    const handleCheckBoxClick = (e) => {
+        // 버블링 방지
+        e.stopPropagation();    // checkbox 클릭시에는 오른쪽 사이드바가 열리지 않도록
+    }
+
     return (
         <ul css={S.SLayout}>
             <li css={S.SListBox} onClick={handleOpenClick}>
                 <div css={S.SListContent}>
-                    <input css={S.SCheckBox} type="checkbox" />
+                    <input css={S.SCheckBox} type="checkbox" onClick={handleCheckBoxClick}/>
                     <span>Research content ideas</span>
                 </div>
                 <FaChevronRight />
